@@ -1,0 +1,225 @@
+$backgroundColor: #1e1f22;
+$headerTextColor: #65aef8;
+$normalTextColor: #ffffff;
+$borderRadiusCircle: 50%;
+$navColor:#313236;
+$smallBlackBoxShadow:3px 3px 5px 1px rgba(0, 0, 0, 0.75);
+
+body {
+    background: $backgroundColor;
+}
+
+nav {
+    background: $navColor;
+    padding: 30px;
+    button {
+        display: none;
+    }
+    a {
+        color: $normalTextColor;
+        text-decoration: none;
+    }
+    ul {
+        text-align: center;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    .left {
+        h3 {
+            color: $headerTextColor;
+        }
+    }
+    article {
+        p {
+            color: $normalTextColor;
+        }
+    }
+    .right {
+        .separator {
+            border-top: 1px solid #343436;
+            width: 80%;
+            margin: 0 auto;
+        }
+        h3 {
+            font-size: 22px;
+            color: $normalTextColor;
+            font-weight: 500;
+        }
+        ul {
+            width: auto;
+        }
+        .circleImage {
+            width: 30%;
+            float: left;
+            img {
+                display: inline-block;
+                border-radius: $borderRadiusCircle;
+                -moz-border-radius: $borderRadiusCircle;
+                -webkit-border-radius: $borderRadiusCircle;
+            }
+        }
+        .textContainer {
+            .mainText {
+                color: $headerTextColor;
+                margin: 0;
+            }
+            .relatedText {
+                color: $normalTextColor;
+                margin: 0;
+            }
+        }
+    }
+}
+
+footer {
+    display: block;
+    a {
+        text-decoration: none;
+        color: $headerTextColor;
+    }
+    li {
+        list-style: none;
+        color: $headerTextColor;
+    }
+}
+
+/*Used a higher breakpoint to cover both mobile and tablet size*/
+@media (max-width:950px) {
+    nav {
+        button {
+            display: block;
+            border: none;
+            background: transparent;
+            img {
+                width: 50px;
+            }
+        }
+        ul {
+            display: none;
+        }
+        li {
+            display: block;
+            padding: 10px;
+            font-size: 22px;
+            text-align: left;
+            img {
+                width: 25px;
+            }
+        }
+    }
+    .left {
+        width: 100%;
+        margin: 0 auto;
+        article {
+            padding: 20px;
+            h3 {
+                font-size: 22px;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .right {
+        width: 100%;
+        margin: 0 auto;
+        background: #151517;
+        -webkit-box-shadow: $smallBlackBoxShadow;
+        -moz-box-shadow: $smallBlackBoxShadow;
+        box-shadow: $smallBlackBoxShadow;
+        h3 {
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+        ul {
+            padding: 20px;
+        }
+        li {
+            padding: 10px;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        topList {
+            font-size: 16px;
+        }
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+/*Desktop*/
+@media (min-width:951px) {
+    nav {
+        li {
+            display: inline;
+            padding: 20px;
+            font-size: 22px;
+        }
+        .searchIcon {
+            position: relative;
+            top: 15px;
+        }
+        img {
+            width: 40px;
+        }
+    }
+
+    /*Using a Two Column Layout Style*/
+    .left {
+        width: 70%;
+        float: left;
+        article {
+            width: 40%;
+            float: left;
+            padding: 20px;
+            img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                max-height: 8em;
+                min-height: 100px;
+            }
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+     /*Using a Two Column Layout Style*/
+    .right {
+        width: 30%;
+        float: left;
+        ul {
+            padding: 0px;
+        }
+        li {
+            padding-bottom: 10px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    footer {
+        ul {
+            text-align: center;
+        }
+        li {
+            display: inline;
+            padding: 5px;
+        }
+    }
+}

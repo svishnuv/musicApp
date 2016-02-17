@@ -1,0 +1,159 @@
+body {
+  background: #1e1f22; }
+
+nav {
+  background: #313236;
+  padding: 30px; }
+  nav button {
+    display: none; }
+  nav a {
+    color: #ffffff;
+    text-decoration: none; }
+  nav ul {
+    text-align: center; }
+  nav li {
+    list-style: none; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+  .container .left h3 {
+    color: #65aef8; }
+  .container article p {
+    color: #ffffff; }
+  .container .right .separator {
+    border-top: 1px solid #343436;
+    width: 80%;
+    margin: 0 auto; }
+  .container .right h3 {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500; }
+  .container .right ul {
+    width: auto; }
+  .container .right .circleImage {
+    width: 30%;
+    float: left; }
+    .container .right .circleImage img {
+      display: inline-block;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%; }
+  .container .right .textContainer .mainText {
+    color: #65aef8;
+    margin: 0; }
+  .container .right .textContainer .relatedText {
+    color: #ffffff;
+    margin: 0; }
+
+footer {
+  display: block; }
+  footer a {
+    text-decoration: none;
+    color: #65aef8; }
+  footer li {
+    list-style: none;
+    color: #65aef8; }
+
+/*Used a higher breakpoint to cover both mobile and tablet size*/
+@media (max-width: 950px) {
+  nav button {
+    display: block;
+    border: none;
+    background: transparent; }
+    nav button img {
+      width: 50px; }
+  nav ul {
+    display: none; }
+  nav li {
+    display: block;
+    padding: 10px;
+    font-size: 22px;
+    text-align: left; }
+    nav li img {
+      width: 25px; }
+
+  .left {
+    width: 100%;
+    margin: 0 auto; }
+    .left article {
+      padding: 20px; }
+      .left article h3 {
+        font-size: 22px; }
+      .left article img {
+        width: 100%;
+        height: auto; }
+      .left article p {
+        font-size: 16px; }
+
+  .right {
+    width: 100%;
+    margin: 0 auto;
+    background: #151517;
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.75); }
+    .right h3 {
+      position: relative;
+      top: 15px;
+      left: 25px; }
+    .right ul {
+      padding: 20px; }
+    .right li {
+      padding: 10px; }
+      .right li img {
+        width: 70px;
+        height: 70px; }
+    .right topList {
+      font-size: 16px; }
+
+  footer {
+    text-align: center; } }
+/*Desktop*/
+@media (min-width: 951px) {
+  nav li {
+    display: inline;
+    padding: 20px;
+    font-size: 22px; }
+  nav .searchIcon {
+    position: relative;
+    top: 15px; }
+  nav img {
+    width: 40px; }
+
+  /*Using a Two Column Layout Style*/
+  .left {
+    width: 70%;
+    float: left; }
+    .left article {
+      width: 40%;
+      float: left;
+      padding: 20px; }
+      .left article img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        max-height: 8em;
+        min-height: 100px; }
+      .left article h3 {
+        font-size: 22px; }
+
+  /*Using a Two Column Layout Style*/
+  .right {
+    width: 30%;
+    float: left; }
+    .right ul {
+      padding: 0px; }
+    .right li {
+      padding-bottom: 10px; }
+    .right img {
+      width: 50px;
+      height: 50px; }
+
+  footer ul {
+    text-align: center; }
+  footer li {
+    display: inline;
+    padding: 5px; } }
+
+/*# sourceMappingURL=mainPage.css.map */
